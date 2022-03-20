@@ -1,5 +1,6 @@
 const weather = document.querySelector("#weatherContainer span:first-child");
 const city = document.querySelector("#weatherContainer span:last-child");
+const loader = document.querySelector(".loader");
 const API_KEY = "8266e2e7efc26f84f278ebac8d1fa01f";
 
 function onGeoSuccess(position) {
@@ -12,7 +13,8 @@ function onGeoSuccess(position) {
             city.innerText = data.name;
             weather.innerText = `${data.weather[0].main} / ${data.main.temp}℃`;
             }
-        );
+    );
+    loader.classList.add("hidden");
 }
 
 function onGeoError() {
