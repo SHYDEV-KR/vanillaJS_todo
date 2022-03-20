@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap');
+
+* {
+    color: white;
+    font-family: 'Gaegu', cursive;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+input {color: black;}
+
+input[type=text]{
+    font-size: 18px;
+    padding: 7px;
+}
+
+button,
+#loginForm input[type=submit]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;  
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(21, 24, 23, 0.85);
+    width: 70%;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+hr {
+    width: 350px;
+    background-color: white;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#loginForm {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#loginForm input[type=submit] {
+    margin-top: 3px;
+    margin-bottom: 10px;
+    background-color: #6169F2;
+    color: white;
+}
+
+#clockContainer #clock {
+    font-size: 100px;
+    margin: 0;
+}
+
+#weatherContainer {
+    font-size: 25px;
+    padding-bottom: 20px;
+    border-bottom: white 1px solid;
+}
+
+#todoForm {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+#todoForm input:last-of-type {
+    cursor: pointer;
+}
+
+#todoContainer {
+    width: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#todoContainer ul {
+    width: 80%;
+    font-size: 23px;
+    padding: 0;
+}
+
+#todoContainer li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    word-break:break-all;
+    margin-bottom: 5px;
+}
+
+#todoContainer li input {
+    position: relative;
+    top: 4.5px;
+}
+
+#todoContainer li span {
+    width: 69%;
+    padding-left: 5px;
+}
+
+#todoContainer li button {
+    font-size: 15px;
+    padding: 4px 5px;
+    background-color: #E34E58;
+    color: white;
+
+}
+
+
+button.deleteAll {
+    width: 85%;
+    padding: 10px;
+    background-color: #E34E58;
+
+}
